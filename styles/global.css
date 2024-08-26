@@ -56,3 +56,12 @@ nav{
     padding: 15px 15px 15px 20px;
     text-decoration: none;
 }
+/*-----------------------Footer-----------------------*/
+.btn-wsp{
+    position: fixed;
+    width: 55px;
+    height: 55px;
+    bottom: 30px;
+    right: 30px;
+    z-index: 100;
+}
