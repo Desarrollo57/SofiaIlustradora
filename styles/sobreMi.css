@@ -1,0 +1,81 @@
+/*---------- fondo ----------*/
+body{
+    background-color: #BF2EF0;
+}
+main{
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 20vh;
+}
+.profesion{
+    /*background-color: aliceblue;*/
+    width: 80vw;
+    margin: 10vh 10vw 15vh 10vw;
+    border-radius: 4px;
+    padding: 2vh;
+    color: #FFF6EA;
+}
+.sobreMi{
+    /*background-color: aliceblue;*/
+    width: 80vw;
+    margin: 10vh 10vw 1vh 10vw;
+    border-radius: 4px;
+    padding: 2vh;
+    color: #FFF6EA;
+}
+.educacion{
+    /*background-color: aliceblue;*/
+    width: 38vw;
+    margin: 1vh 1vw 1vh 10vw;
+    border-radius: 4px;
+    padding: 2vh;
+    color: #FFF6EA;
+}
+.experiencia{
+    /*background-color: aliceblue;*/
+    width: 39vw;
+    margin: 1vh 8vw 1vh 0.7vw;
+    border-radius: 4px;
+    padding: 2vh;
+    color: #FFF6EA;
+}
+.tecnologias{
+    /*background-color: aliceblue;*/
+    width: 80vw;
+    margin: 1vh 10vw 5vh 10vw;
+    border-radius: 4px;
+    padding: 2vh;
+    color: #FFF6EA;
+}
+/*---------- contenido de los cuadros ----------*/
+.tituloContenedor{
+    display: flex;
+    flex-direction: row;
+}
+.tituloContenedor h1{
+    font-size: 25px;
+}
+.tituloContenedor img{
+    width: 20px;
+    margin-left: 8px;
+}
+.subtitulo{
+    margin-left: 10px;
+    color: #FEECB3;
+}
+.programas{
+    display: flex;
+    justify-content: flex-start;
+}
+.programas img{
+    width: 10vw;
+}
+/*---------- experiencia laboral ----------*/
+.experienciaLaboral{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background: #ED3EF7;
+    border-radius: 4px;
+    padding: 1px 5px 1px 5px;
+}
