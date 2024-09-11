@@ -9,27 +9,13 @@
 </head>
 <body>
     <header>
-        <!-- MENÚ SUPERIOR -->
-        <nav class="contenedorMenuHorizontal">
+        <button class="abrirMenu" id="abrir"><img src="../img/icons/abrir.svg" alt="abrir"></button>
+        <nav class="contenedorMenuHorizontal" id="nav">
+            <button class="cerrarMenu" id="cerrar"><img src="../img/icons/cerrar.svg" alt="cerrar"></button>
             <ul class="menuHorizontal">
                 <li><a href="../index.html">Inicio</a></li>
-                <li>
-                    <a href="./portafolio.html">Portafolio</a>
-                    <!--
-                    <ul class="menuVertical">
-                        <li><a href="#">El mas bonito</a></li>
-                        <li><a href="#">Ahi maso</a></li>
-                        <li><a href="#">-_-</a></li>
-                    </ul>-->
-                </li>
-                <li>
-                    <a href="../vistas/sobreMi.html">Sobre mí</a>
-                    <!--
-                    <ul class="menuVertical">
-                        <li><a href="#">Mensual</a></li>
-                        <li><a href="#">Anual</a></li>
-                    </ul>-->
-                </li>
+                <li><a href="./portafolio.html">Portafolio</a></li>
+                <li><a href="./sobreMi.html">Sobre mí</a></li>
                 <li><a href="#">Contacto</a></li>
             </ul>
         </nav>
@@ -45,7 +31,7 @@
             <label for="telefono">Telefono</label>
             <input type="" id="telefono" class="imput-padron" required placeholder="+57 xxxxxxxxxx">
 
-            <label for="mensaje">Mensaje</label>
+            <label for="mensaje">¿Que tipo de diseño quiere?</label>
             <textarea id="mensaje" cols="70" rows="10" class="imput-padron" required></textarea>
             <fieldset>
                 <legend>¿Como le gustaria que lo contactemos?</legend>
@@ -64,11 +50,10 @@
                     <option>Noche</option>
                 </select>
             </fieldset>
-            <label class="checkbox"><input type="checkbox" >¿Le gustaría recibir actualizaciones del estado de su proceso?</label>
+            <label class="checkbox"><input type="checkbox" >¿Le gustaría recibir actualizaciones del estado de su encargo?</label>
             <input type="submit" value="Enviar Formulario" class="enviar" onclick="captura()">
         </form>
-        <!--<h3 id="respuesta">aqui respuesta</h3>-->
-        <table>
+        <table class="tabla">
             <thead>
                 <tr>
                     <th>Dia</th>
@@ -97,6 +82,7 @@
             <i class="icon-whatsapp"></i>
         </a>
     </footer>
+    <script src="../scripts/menu.js"></script>
     <script src="../scripts/controlador.js"></script>
 </body>
 </html>

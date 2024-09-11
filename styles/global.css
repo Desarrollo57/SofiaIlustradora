@@ -7,13 +7,23 @@
     font-weight: 300;
     font-style: normal;
 }
+/*---------- fondo ----------*/
+body{
+    background-image: url(../img/fondo.jpeg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-attachment: fixed;
+    background-size: cover;
+}
 /*---------- menú superior ----------*/ /* paleta de colores https://colorhunt.co/palette/bf2ef0ed3ef7feecb3fff6ea*/
 header{
     display: flex;
     justify-content: center;
+
 }
 .contenedorMenuHorizontal{
-    position: absolute;
+    position: fixed;
+    z-index: 100;
     background: rgba(0, 0 ,0, .5);/*Efecto de transparencia para el menu principal*/
     backdrop-filter: blur(3px);
     border-radius: 5px;
@@ -38,8 +48,8 @@ nav{
 }
 .menuHorizontal li:hover{
     background-color: #ED3EF7;
+    color: #BF2EF0;
 }
-
 .menuVertical{
     position: absolute;
     display: none;
@@ -58,6 +68,57 @@ nav{
     color: white;
     padding: 15px 15px 15px 20px;
     text-decoration: none;
+}
+.abrirMenu,
+.cerrarMenu{
+    display: none;
+}
+/*-----------------------Menú hamburguesa-----------------------*/
+@media screen and (max-width: 550px){
+    .abrirMenu,
+    .cerrarMenu{
+        display: block;
+        border: 0;
+        font-size: 1.25rem;
+        background-color: transparent;
+        color: #ECDFCC;
+        cursor: pointer;
+    }
+    .abrirMenu img{
+        position: fixed;
+        width: 30px;
+    }
+    .cerrarMenu img{
+        width: 30px;
+    }
+    .contenedorMenuHorizontal{
+        backdrop-filter: none;
+        margin-top: 0;
+        width: 42%;
+        opacity: 0;
+        visibility: hidden;
+        display: flex;
+        flex-direction: column;
+        align-items: end;
+        gap: 1rem;
+        position: absolute;
+        top: 0;
+        right: 0;
+        /*bottom: 0;*/
+        background-color: #ED3EF7;
+        padding: 1rem 1rem 0 0;
+        box-shadow: 0 0 0 100vmax rgba(0, 0, 0, -5);
+        z-index: 100;
+    }
+    .contenedorMenuHorizontal.visible{
+        position: fixed;
+        opacity: 1;
+        visibility: visible;
+    }
+    .menuHorizontal{
+        flex-direction: column;
+        align-items: end;
+    }
 }
 /*-----------------------Footer-----------------------*/
 .btn-wsp{

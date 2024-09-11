@@ -38,7 +38,21 @@ form label, form legend {
     background-color: darkorange;
     transform: scale(1.2);
 }
-/*---------- fondo ----------*/
-body{
-    background-color: #F1D3CE;
+.tabla{
+    color: #FFF6EA;
+}
+.copyright{
+    display: flex;
+    justify-content: center;
+    color: #FFF6EA;
+    margin: 5px 0px 5px 0px;
+}
+/*-----------------------responsive-----------------------*/
+@media screen and (max-width: 550px){
+    .imput-padron{
+        width: 100%;
+    }
+    .enviar{
+        width: 80%;
+    }
 }

@@ -9,16 +9,13 @@
 </head>
 <body>
     <header>
-        <!-- MENÚ SUPERIOR -->
-        <nav class="contenedorMenuHorizontal">
+        <button class="abrirMenu" id="abrir"><img src="../img/icons/abrir.svg" alt="abrir"></button>
+        <nav class="contenedorMenuHorizontal" id="nav">
+            <button class="cerrarMenu" id="cerrar"><img src="../img/icons/cerrar.svg" alt="cerrar"></button>
             <ul class="menuHorizontal">
                 <li><a href="../index.html">Inicio</a></li>
-                <li>
-                    <a href="./portafolio.html">Portafolio</a>
-                </li>
-                <li>
-                    <a href="#">Sobre mí</a>
-                </li>
+                <li><a href="./portafolio.html">Portafolio</a></li>
+                <li><a href="#">Sobre mí</a></li>
                 <li><a href="./contacto.html">Contacto</a></li>
             </ul>
         </nav>
@@ -78,5 +75,6 @@
             <i class="icon-whatsapp"></i>
         </a>
     </footer>
+    <script src="../scripts/menu.js"></script>
 </body>
 </html>
