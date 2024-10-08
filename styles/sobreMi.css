@@ -8,12 +8,11 @@ main{
     margin-top: 20vh;
 }
 .profesion{
-    /*background-color: aliceblue;*/
     width: 80vw;
     margin: 10vh 10vw 15vh 10vw;
     border-radius: 4px;
     padding: 2vh;
-    color: #FFF6EA;
+    color: #181C14;
 }
 .sobreMi{
     /*background-color: aliceblue;*/
@@ -21,7 +20,7 @@ main{
     margin: 10vh 10vw 1vh 10vw;
     border-radius: 4px;
     padding: 2vh;
-    color: #FFF6EA;
+    color: #181C14;
 }
 .educacion{
     /*background-color: aliceblue;*/
@@ -29,7 +28,7 @@ main{
     margin: 1vh 1vw 1vh 10vw;
     border-radius: 4px;
     padding: 2vh;
-    color: #FFF6EA;
+    color: #181C14;
 }
 .experiencia{
     /*background-color: aliceblue;*/
@@ -37,7 +36,7 @@ main{
     margin: 1vh 8vw 1vh 0.7vw;
     border-radius: 4px;
     padding: 2vh;
-    color: #FFF6EA;
+    color: #181C14;
 }
 .tecnologias{
     /*background-color: aliceblue;*/
@@ -45,7 +44,7 @@ main{
     margin: 1vh 10vw 5vh 10vw;
     border-radius: 4px;
     padding: 2vh;
-    color: #FFF6EA;
+    color: #181C14;
 }
 /*---------- contenido de los cuadros ----------*/
 .tituloContenedor{
@@ -61,7 +60,7 @@ main{
 }
 .subtitulo{
     margin-left: 10px;
-    color: #FEECB3;
+    color: #3C3D37;
 }
 .programas{
     display: flex;

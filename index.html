@@ -2,37 +2,482 @@
 <html lang="es">
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./styles/global.css">
-    <link rel="stylesheet" href="./styles/index.css">
     <title>Sofia Ilustradora</title>
+
+    <!--========== CSS FILES ==========-->
+    <link rel="stylesheet" href="./styles/stylesN.css">
+    <link rel="stylesheet" href="./styles/color-1.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+    <!--========== Style Switcher end ==========-->
+    <link rel="stylesheet" href="./styles/color-1.css" class="alternate-style" title="color-1" disabled>
+    <link rel="stylesheet" href="./styles/color-2.css" class="alternate-style" title="color-2" disabled>
+    <link rel="stylesheet" href="./styles/color-3.css" class="alternate-style" title="color-3" disabled>
+    <link rel="stylesheet" href="./styles/color-4.css" class="alternate-style" title="color-4" disabled>
+    <link rel="stylesheet" href="./styles/color-5.css" class="alternate-style" title="color-5" disabled>
+    <link rel="stylesheet" href="./styles/style-switcher.css">
 </head>
 <body>
-    <header>
-        <button class="abrirMenu" id="abrir"><img src="./img/icons/abrir.svg" alt="abrir"></button>
-        <nav class="contenedorMenuHorizontal" id="nav">
-            <button class="cerrarMenu" id="cerrar"><img src="./img/icons/cerrar.svg" alt="cerrar"></button>
-            <ul class="menuHorizontal">
-                <li><a href="#">Inicio</a></li>
-                <li><a href="./vistas/portafolio.html">Portafolio</a></li>
-                <li><a href="./vistas/sobreMi.html">Sobre mí</a></li>
-                <li><a href="./vistas/contacto.html">Contacto</a></li>
-            </ul>
-        </nav>
-    </header>
-    <main>
-        <!--
-        <img src="./img/principal.svg" alt="imagen principal">
-        -->
-    </main>
-    
-    <footer>
-        <p class="copyright">© Copyright Sofia Ilustradora - 2024</p>
-        <a aria-label="Chat on WhatsApp" href="https://wa.me/573143742159?" target="_blank"><img alt="icono WhatsApp" src="../img/icons/logo-wsp.png" class="btn-wsp" id="respuesta"/>
-            <i class="icon-whatsapp"></i>
-        </a>
-    </footer>
-    <script src="./scripts/menu.js"></script>
-    <script src="./scripts/controlador.js"></script>
+<!--========== Main container start ==========-->
+<div class="main-containner">
+    <!--========== Aside start ==========-->
+    <div class="aside">
+        <div class="logo">
+            <a href="#"><span>S</span>ofia</a>
+        </div>
+        <div class="nav-toggler">
+            <span></span>
+        </div>
+        <ul class="nav">
+            <li><a href="#home" class="active"><i class="fa fa-home"></i> Home</a></li>
+            <li><a href="#about"><i class="fa fa-user"></i> Yo</a></li>
+            <li><a href="#services"><i class="fa fa-list"></i> Servicios</a></li>
+            <li><a href="#portfolio"><i class="fa fa-briefcase"></i> Portafolio</a></li>
+            <li><a href="#contact"><i class="fa fa-comments"></i> Contacto</a></li>
+        </ul>
+    </div>
+    <!--========== Aside end ==========-->
+    <!--========== Main content start ==========-->
+    <div class="main-content">
+        <!--========== Home section start ==========-->
+        <section class="home section" id="home">
+            <div class="container">
+                <div class="row">
+                    <div class="home-info padd-15">
+                        <h3 class="hello">¡Hola!, Mi nombre es <span class="name">Sofia Mayorga</span></h3>
+                        <h3 class="my-profession">Soy <span class="typing">diseñadora digital</span></h3>
+                        <p> ✨ Soy una ilustradora que disfruta trabajar en entornos digitales y en técnicas tradicionales. Ofrezco varios servicios tales como comisiones de dibujo, animaciones, diseño de portadas, merchandising personalizado, y ahora modelados 3D. Si te interesó lo que viste no dudes en comunicarte conmigo!</p>
+                        <a href="#contact" class="btn hire-me">Contáctame</a>
+                    </div>
+                    <div class="home-img padd-15">
+                        <img src="./img/fotoDePerfil.png" alt="mi foto">
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!--========== Home section end ==========-->
+        <!--========== About section start ==========-->
+        <section class="about section" id="about">
+            <div class="container">
+                <div class="row">
+                    <div class="section-title padd-15">
+                        <h2>Acerca de mí</h2>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="about-content padd-15">
+                        <div class="row">
+                            <div class="about-text padd-15">
+                                <h3>Soy Sofía Mayorga <span>diseñadora digital</span></h3>
+                                <p>Poseo un dominio avanzado de herramientas de diseño como Krita y blender. Estas herramientas me permiten crear gráficos y diseños de alta calidad que capturan la esencia de su marca y comunican su mensaje de manera efectiva.
+                                    Además, tengo una sólida comprensión de los principios de diseño, incluyendo la composición, el equilibrio, la tipografía y el uso del color. Esto me permite crear diseños visualmente atractivos y coherentes que resuenan con su audiencia.
+                                    </p>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="personal-info padd-15">
+                                <div class="row">
+                                    <!--
+                                    <div class="info-item padd-15">
+                                        <p>Birthday : <span>17 sep 1999</span></p>
+                                    </div>
+                                    -->
+                                    <div class="info-item padd-15">
+                                        <p>Edad:  <span>22</span></p>
+                                    </div>
+                                    <div class="info-item padd-15">
+                                        <p>Website : <span>www.domain.com</span></p>
+                                    </div>
+                                    <div class="info-item padd-15">
+                                        <p>Email : <span>info@gmail.com</span></p>
+                                    </div>
+                                    <!--
+                                    <div class="info-item padd-15">
+                                        <p>Degree : <span>CS</span></p>
+                                    </div>
+                                    -->
+                                    <div class="info-item padd-15">
+                                        <p>Teléfono: <span>+57 3143742159</span></p>
+                                    </div>
+                                    <div class="info-item padd-15">
+                                        <p>Ciudad: <span>Bogotá</span></p>
+                                    </div>
+                                    <div class="info-item padd-15">
+                                        <p>Freelance : <span>Disponible</span></p>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="buttons padd-15">
+                                        <!--<a href="#" class="btn">Download CV</a>-->
+                                        <a href="#portfolio" class="btn hire-me">Proyectos</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="skills padd-15">
+                                <div class="row">
+                                    <div class="skill-item padd-15">
+                                        <h5>Krita</h5>
+                                        <div class="progress">
+                                            <div class="progress-in" style="width: 76%;"></div>
+                                            <div class="skill-percent">76%</div>
+                                        </div>
+                                    </div>
+                                    <div class="skill-item padd-15">
+                                        <h5>Blender</h5>
+                                        <div class="progress">
+                                            <div class="progress-in" style="width: 86%;"></div>
+                                            <div class="skill-percent">86%</div>
+                                        </div>
+                                    </div>
+                                    <div class="skill-item padd-15">
+                                        <h5>Adobe illustrator</h5>
+                                        <div class="progress">
+                                            <div class="progress-in" style="width: 66%;"></div>
+                                            <div class="skill-percent">66%</div>
+                                        </div>
+                                    </div>
+                                    <!--
+                                    <div class="skill-item padd-15">
+                                        <h5>HTML</h5>
+                                        <div class="progress">
+                                            <div class="progress-in" style="width: 96%;"></div>
+                                            <div class="skill-percent">96%</div>
+                                        </div>
+                                    </div>
+                                    -->
+                                    <!--
+                                    <div class="skill-item padd-15">
+                                        <h5>Bootstrap</h5>
+                                        <div class="progress">
+                                            <div class="progress-in" style="width: 76%;"></div>
+                                            <div class="skill-percent">76%</div>
+                                        </div>
+                                    </div>
+                                    -->
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="education padd-15">
+                                <h3 class="title">Educación</h3>
+                                <div class="row">
+                                    <div class="timeline-box padd-15">
+                                        <div class="timeline shadow-dark">
+                                            <!--===== timeline item =====-->
+                                            <div class="timeline-item">
+                                                <div class="circle-dot"></div>
+                                                <h3 class="timeline-date">
+                                                    <i class="fa fa-calendar"></i> 2013 - 2015
+                                                </h3>
+                                                <h4 class="timeline-title">Certificado en el manejo de abode illustrator SENA</h4>
+                                                <p class="timeline-text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sequi tempore perspiciatis earum minima dicta</p>
+                                            </div>
+                                            <!--===== timeline item =====-->
+                                            <div class="timeline-item">
+                                                <div class="circle-dot"></div>
+                                                <h3 class="timeline-date">
+                                                    <i class="fa fa-calendar"></i> 2013 - 2015
+                                                </h3>
+                                                <h4 class="timeline-title">Diplomado en animación digital 3D Universidad nacional de Colombia</h4>
+                                                <p class="timeline-text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sequi tempore perspiciatis earum minima dicta</p>
+                                            </div>
+                                            <!--===== timeline item =====-->
+                                            <div class="timeline-item">
+                                                <div class="circle-dot"></div>
+                                                <h3 class="timeline-date">
+                                                    <i class="fa fa-calendar"></i> 2013 - 2015
+                                                </h3>
+                                                <h4 class="timeline-title">Certificado en Smart Academia de idiomas nivel B1</h4>
+                                                <p class="timeline-text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sequi tempore perspiciatis earum minima dicta</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!--
+                            
+                            <div class="experience padd-15">
+                                <h3 class="title">Experience</h3>
+                                <div class="row">
+                                    <div class="timeline-box padd-15">
+                                        <div class="timeline shadow-dark">
+                                            ===== timeline item =====
+                                            <div class="timeline-item">
+                                                <div class="circle-dot"></div>
+                                                <h3 class="timeline-date">
+                                                    <i class="fa fa-calendar"></i> 2013 - 2015
+                                                </h3>
+                                                <h4 class="timeline-title">Master in Computer Science</h4>
+                                                <p class="timeline-text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sequi tempore perspiciatis earum minima dicta</p>
+                                            </div>
+                                                ===== timeline item =====
+                                            <div class="timeline-item">
+                                                <div class="circle-dot"></div>
+                                                <h3 class="timeline-date">
+                                                    <i class="fa fa-calendar"></i> 2013 - 2015
+                                                </h3>
+                                                <h4 class="timeline-title">Master in Computer Science</h4>
+                                                <p class="timeline-text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sequi tempore perspiciatis earum minima dicta</p>
+                                            </div>
+                                            ===== timeline item =====
+                                            <div class="timeline-item">
+                                                <div class="circle-dot"></div>
+                                                <h3 class="timeline-date">
+                                                    <i class="fa fa-calendar"></i> 2013 - 2015
+                                                </h3>
+                                                <h4 class="timeline-title">Master in Computer Science</h4>
+                                                <p class="timeline-text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sequi tempore perspiciatis earum minima dicta</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!--========== About section end ==========-->
+        <!--========== Services section start ==========-->
+        <section class="service section" id="services">
+            <div class="container">
+                <div class="row">
+                    <div class="section-title padd-15">
+                        <h2>Servicios</h2>
+                    </div>
+                </div>
+                <div class="row">
+                    <!--========== Services item start ==========-->
+                    <div class="service-item padd-15">
+                        <div class="service-item-inner">
+                            <div class="icon">
+                                <i class="fa fa-hippo"></i>
+                            </div>
+                            <h4>Animaciones</h4>
+                            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Consequuntur, id aliquam!</p>
+                        </div>
+                    </div>
+                    <!--========== Services item end ==========-->
+                    <!--========== Services item start ==========-->
+                    <div class="service-item padd-15">
+                        <div class="service-item-inner">
+                            <div class="icon">
+                                <i class="fa fa-file"></i>
+                            </div>
+                            <h4>Diseño de portadas</h4>
+                            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Consequuntur, id aliquam!</p>
+                        </div>
+                    </div>
+                    <!--========== Services item end ==========-->
+                    <!--========== Services item start ==========-->
+                    <div class="service-item padd-15">
+                        <div class="service-item-inner">
+                            <div class="icon">
+                                <i class="fa fa-palette"></i>
+                            </div>
+                            <h4>Comisiones de dibujo</h4>
+                            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Consequuntur, id aliquam!</p>
+                        </div>
+                    </div>
+                    <!--========== Services item end ==========-->
+                    <!--========== Services item start ==========-->
+                    <div class="service-item padd-15">
+                        <div class="service-item-inner">
+                            <div class="icon">
+                                <i class="fa fa-cube"></i>
+                            </div>
+                            <h4>Diseño 3d</h4>
+                            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Consequuntur, id aliquam!</p>
+                        </div>
+                    </div>
+                    <!--========== Services item end ==========-->
+                    <!--========== Services item start ==========
+                    <div class="service-item padd-15">
+                        <div class="service-item-inner">
+                            <div class="icon">
+                                <i class="fa fa-search"></i>
+                            </div>
+                            <h4>Web Design</h4>
+                            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Consequuntur, id aliquam!</p>
+                        </div>
+                    </div>
+                    ========== Services item end ==========-->
+                    <!--========== Services item start ==========
+                    <div class="service-item padd-15">
+                        <div class="service-item-inner">
+                            <div class="icon">
+                                <i class="fa fa-bullhorn"></i>
+                            </div>
+                            <h4>Web Design</h4>
+                            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Consequuntur, id aliquam!</p>
+                        </div>
+                    </div>
+                    ========== Services item end ==========-->
+                </div>
+            </div>
+        </section>
+        <!--========== Services section end ==========-->
+        <!--========== Portfolio section start ==========-->
+        <section class="portfolio section" id="portfolio">
+            <div class="container">
+                <div class="row">
+                    <div class="section-title padd-15">
+                        <h2>Portafolio</h2>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="portfolio-heading padd-15">
+                        <h2>Mis últimos proyectos:</h2>
+                    </div>
+                </div>
+                <div class="row">
+                    <!--========== Portfolio item start ==========-->
+                    <div class="portfolio-item padd-15">
+                        <div class="portfolio-item-inner shadow-dark">
+                            <div class="portfolio-img">
+                                <img src="./img/proyectos/2.jpeg" alt="imagen proyecto">
+                            </div>
+                        </div>      
+                    </div>
+                    <!--========== Portfolio item end ==========-->
+                    <!--========== Portfolio item start ==========-->
+                    <div class="portfolio-item padd-15">
+                        <div class="portfolio-item-inner shadow-dark">
+                            <div class="portfolio-img">
+                                <img src="./img/proyectos/4.jpeg" alt="imagen proyecto">
+                            </div>
+                        </div>      
+                    </div>
+                    <!--========== Portfolio item end ==========-->
+                    <!--========== Portfolio item start ==========-->
+                    <div class="portfolio-item padd-15">
+                        <div class="portfolio-item-inner shadow-dark">
+                            <div class="portfolio-img">
+                                <img src="./img/proyectos/3.jpeg" alt="imagen proyecto">
+                            </div>
+                        </div>      
+                    </div>
+                    <!--========== Portfolio item end ==========-->
+                    <!--========== Portfolio item start ==========-->
+                    <div class="portfolio-item padd-15">
+                        <div class="portfolio-item-inner shadow-dark">
+                            <div class="portfolio-img">
+                                <img src="./img/proyectos/1.jpeg" alt="imagen proyecto">
+                            </div>
+                        </div>      
+                    </div>
+                    <!--========== Portfolio item end ==========-->
+                </div>
+            </div>
+        </section>
+        <!--========== Portfolio section end ==========-->
+        <!--========== Contact section start ==========-->
+        <section class="contact section" id="contact">
+            <div class="container">
+                <div class="row">
+                    <div class="section-title padd-15">
+                        <h2>Contáctame</h2>
+                    </div>
+                </div>
+                <h3 class="contact-title padd-15">¿Tienes alguna pregunta?</h3>
+                <h4 class="contact-sub-title padd-15">Estoy a su servicio</h4>
+                <div class="row">
+                    <!--========== Contact info item start ==========-->
+                    <div class="contact-info-item padd-15">
+                        <div class="icon"><i class="fa fa-phone"></i></div>
+                        <h4>Teléfono</h4>
+                        <p>+57 3143742159</p>
+                    </div>
+                    <!--========== Contact info item end ==========-->
+                    <!--========== Contact info item start ==========
+                    <div class="contact-info-item padd-15">
+                        <div class="icon"><i class="fa fa-map-market-alt"></i></div>
+                        <h4>Office</h4>
+                        <p>Islamabad</p>
+                    </div>
+                    ========== Contact info item end ==========-->
+                    <!--========== Contact info item start ==========-->
+                    <div class="contact-info-item padd-15">
+                        <div class="icon"><i class="fa fa-envelope"></i></div>
+                        <h4>E-mail</h4>
+                        <p>info@gmail.com</p>
+                    </div>
+                    <!--========== Contact info item end ==========-->
+                    <!--========== Contact info item start ==========-->
+                    <div class="contact-info-item padd-15">
+                        <div class="icon"><i class="fa fa-globe-europe"></i></div>
+                        <h4>Website</h4>
+                        <p>www.domain.com</p>
+                    </div>
+                    <!--========== Contact info item end ==========-->
+                </div>
+                <h3 class="contact-title padd-15">Envíame un E-mail</h3>
+                <h4 class="contact-sub-title padd-15">Siempre respondo los mensajes</h4>
+                <!--========== Contact form ==========-->
+                <div class="row">
+                    <div class="contact-form padd-15">
+                        <div class="row">
+                            <div class="form-item col-6 padd-15">
+                                <div class="form-group">
+                                    <input type="text" class="form-control" placeholder="Nombre">
+                                </div>
+                            </div>
+                            <div class="form-item col-6 padd-15">
+                                <div class="form-group">
+                                    <input type="email" class="form-control" placeholder="E-mail">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="form-item col-12 padd-15">
+                                <div class="form-group">
+                                    <input type="text" class="form-control" placeholder="Asunto">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="form-item col-12 padd-15">
+                                <div class="form-group">
+                                    <textarea name="" class="form-control" id="" placeholder="Mensaje"></textarea>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="form-item col-12 padd-15">
+                                <button type="submit" class="btn">Enviar mensaje</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!--========== Contact section end ==========-->
+    </div>
+    <!--========== Main content end ==========-->
+</div>
+<!--========== Main container end ==========-->
+<!--========== Style Switcher start ==========-->
+<div class="style-switcher">
+    <div class="style-switcher-toggler s-icon">
+        <i class="fas fa-cog fa-spin"></i>
+    </div>
+    <div class="day-night s-icon">
+        <i class="fas "></i>
+    </div>
+    <h4>Theme Colors</h4>
+    <div class="colors">
+        <span class="color-1" onclick="setActiveStyle('color-1')"></span>
+        <span class="color-2" onclick="setActiveStyle('color-2')"></span>
+        <span class="color-3" onclick="setActiveStyle('color-3')"></span>
+        <span class="color-4" onclick="setActiveStyle('color-4')"></span>
+        <span class="color-5" onclick="setActiveStyle('color-5')"></span>
+    </div>
+</div>
+<!--========== Style Switcher end ==========-->
+    <!--========== JS FILES ==========-->
+    <script src="./scripts/script.js"></script>
+    <script src="./scripts/style-switcher.js"></script>
 </body>
 </html>

@@ -41,12 +41,6 @@ form label, form legend {
 .tabla{
     color: #FFF6EA;
 }
-.copyright{
-    display: flex;
-    justify-content: center;
-    color: #FFF6EA;
-    margin: 5px 0px 5px 0px;
-}
 /*-----------------------responsive-----------------------*/
 @media screen and (max-width: 550px){
     .imput-padron{

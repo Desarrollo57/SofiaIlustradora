@@ -48,9 +48,9 @@ nav{
 }
 .menuHorizontal li:hover{
     background-color: #ED3EF7;
-    color: #BF2EF0;
+    color: #BF2EF0; /*REVISAR*/
 }
-.menuVertical{
+.menuVertical{ /*REVISAR*/
     position: absolute;
     display: none;
     list-style: none;
@@ -121,6 +121,12 @@ nav{
     }
 }
 /*-----------------------Footer-----------------------*/
+.copyright{
+    display: flex;
+    justify-content: center;
+    color: #FFF6EA;
+    margin: 5px 0px 5px 0px;
+}
 .btn-wsp{
     position: fixed;
     width: 55px;
