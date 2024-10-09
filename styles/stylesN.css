@@ -225,6 +225,22 @@ ul{
 .aside .nav li a i{
     margin-right: 15px;
 }
+/*-----------------------Menú vertical-----------------------*/
+.abrirMenu,
+.cerrarMenu{
+    display: none;
+
+    border: 0;
+    color: var(--text-back-900);
+    background-color: transparent;
+    cursor: pointer;
+    font-size: 2rem;
+    border: 2px solid var(--skin-color);
+    padding: 2px 12px ;
+    border-radius: 20%;
+    z-index: 99;
+
+}
 /* home */
 .home{
     min-height: 100vh;
@@ -611,15 +627,43 @@ h3.my-profession{
     padding: 0 50px;
 }
 @media (max-width:1199px){
+    /*
     .aside{
         left: -270px;
-    }
+    }*/
     .main-content{
         padding-left: 0;
     }
     .about .about-content .personal-info .info-item p span{
         display: block;
         margin-left: 0;
+    }
+    /* menu hamburguesa*/
+    .abrirMenu,
+    .cerrarMenu{
+        display: block;
+    }
+    .abrirMenu{
+        position: fixed;
+    }
+    .aside{
+        opacity: 0;
+        visibility: hidden;
+
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        box-shadow: 0 0 0 100vmax rgba(0, 0, 0, 0.5);
+        z-index: 100;
+        position: fixed;    
+    }
+    .aside.visible{
+        opacity: 1;
+        visibility: visible;
+    }
+    .nav{
+        flex-direction: column;
+        align-items: end;
     }
 }
 @media (max-width:991px){

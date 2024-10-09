@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <meta charset="UTF-8">
+    <meta charset="UTF-16">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sofia Ilustradora</title>
@@ -22,7 +22,9 @@
 <!--========== Main container start ==========-->
 <div class="main-containner">
     <!--========== Aside start ==========-->
-    <div class="aside">
+    <button class="abrirMenu" id="abrir">≡</button>
+    <div class="aside" id="nav">
+        <button class="cerrarMenu" id="cerrar">X</button>
         <div class="logo">
             <a href="#"><span>S</span>ofia</a>
         </div>
@@ -45,7 +47,7 @@
             <div class="container">
                 <div class="row">
                     <div class="home-info padd-15">
-                        <h3 class="hello">¡Hola!, Mi nombre es <span class="name">Sofia Mayorga</span></h3>
+                        <h3 class="hello">¡Hola!, Mi nombre es <span class="name">Sofia Gutierrez</span></h3>
                         <h3 class="my-profession">Soy <span class="typing">diseñadora digital</span></h3>
                         <p> ✨ Soy una ilustradora que disfruta trabajar en entornos digitales y en técnicas tradicionales. Ofrezco varios servicios tales como comisiones de dibujo, animaciones, diseño de portadas, merchandising personalizado, y ahora modelados 3D. Si te interesó lo que viste no dudes en comunicarte conmigo!</p>
                         <a href="#contact" class="btn hire-me">Contáctame</a>
@@ -69,7 +71,7 @@
                     <div class="about-content padd-15">
                         <div class="row">
                             <div class="about-text padd-15">
-                                <h3>Soy Sofía Mayorga <span>diseñadora digital</span></h3>
+                                <h3>Soy Sofía Gutierrez <span>diseñadora digital</span></h3>
                                 <p>Poseo un dominio avanzado de herramientas de diseño como Krita y blender. Estas herramientas me permiten crear gráficos y diseños de alta calidad que capturan la esencia de su marca y comunican su mensaje de manera efectiva.
                                     Además, tengo una sólida comprensión de los principios de diseño, incluyendo la composición, el equilibrio, la tipografía y el uso del color. Esto me permite crear diseños visualmente atractivos y coherentes que resuenan con su audiencia.
                                     </p>
@@ -84,7 +86,7 @@
                                     </div>
                                     -->
                                     <div class="info-item padd-15">
-                                        <p>Edad:  <span>22</span></p>
+                                        <p>Edad:  <span>20</span></p>
                                     </div>
                                     <div class="info-item padd-15">
                                         <p>Website : <span>www.domain.com</span></p>
@@ -369,6 +371,24 @@
                         </div>      
                     </div>
                     <!--========== Portfolio item end ==========-->
+                    <!--========== Portfolio item start ==========-->
+                    <div class="portfolio-item padd-15">
+                        <div class="portfolio-item-inner shadow-dark">
+                            <div class="portfolio-img">
+                                <img src="./img/proyectos/5.jpeg" alt="imagen proyecto">
+                            </div>
+                        </div>      
+                    </div>
+                    <!--========== Portfolio item end ==========-->
+                    <!--========== Portfolio item start ==========-->
+                    <div class="portfolio-item padd-15">
+                        <div class="portfolio-item-inner shadow-dark">
+                            <div class="portfolio-img">
+                                <img src="./img/proyectos/6.jpeg" alt="imagen proyecto">
+                            </div>
+                        </div>      
+                    </div>
+                    <!--========== Portfolio item end ==========-->
                 </div>
             </div>
         </section>
@@ -417,30 +437,30 @@
                 <h4 class="contact-sub-title padd-15">Siempre respondo los mensajes</h4>
                 <!--========== Contact form ==========-->
                 <div class="row">
-                    <div class="contact-form padd-15">
+                    <form action="https://formsubmit.co/titanasura@gmail.com" method="POST" class="contact-form padd-15">
                         <div class="row">
                             <div class="form-item col-6 padd-15">
                                 <div class="form-group">
-                                    <input type="text" class="form-control" placeholder="Nombre">
+                                    <input type="text" name="name" required class="form-control" placeholder="Nombre">
                                 </div>
                             </div>
                             <div class="form-item col-6 padd-15">
                                 <div class="form-group">
-                                    <input type="email" class="form-control" placeholder="E-mail">
+                                    <input type="email" name="email" required class="form-control" placeholder="E-mail">
                                 </div>
                             </div>
                         </div>
                         <div class="row">
                             <div class="form-item col-12 padd-15">
                                 <div class="form-group">
-                                    <input type="text" class="form-control" placeholder="Asunto">
+                                    <input type="text" name="subject" required class="form-control" placeholder="Asunto">
                                 </div>
                             </div>
                         </div>
                         <div class="row">
                             <div class="form-item col-12 padd-15">
                                 <div class="form-group">
-                                    <textarea name="" class="form-control" id="" placeholder="Mensaje"></textarea>
+                                    <textarea name="coments" class="form-control" placeholder="Mensaje" required></textarea>
                                 </div>
                             </div>
                         </div>
@@ -449,7 +469,9 @@
                                 <button type="submit" class="btn">Enviar mensaje</button>
                             </div>
                         </div>
-                    </div>
+                        <input type="hidden" name="_next" value="http://127.0.0.1:5500/">
+                        <input type="hidden" name="_captcha" value="false">
+                    </form>
                 </div>
             </div>
         </section>
@@ -477,7 +499,7 @@
 </div>
 <!--========== Style Switcher end ==========-->
     <!--========== JS FILES ==========-->
-    <script src="./scripts/script.js"></script>
+    <script src="./scripts/menu.js"></script>
     <script src="./scripts/style-switcher.js"></script>
 </body>
 </html>
