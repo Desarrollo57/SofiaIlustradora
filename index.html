@@ -433,44 +433,42 @@
                     </div>
                     <!--========== Contact info item end ==========-->
                 </div>
-                <h3 class="contact-title padd-15">Envíame un E-mail</h3>
+                <h3 class="contact-title padd-15">Envíame un mensaje por WhatsApp</h3>
                 <h4 class="contact-sub-title padd-15">Siempre respondo los mensajes</h4>
                 <!--========== Contact form ==========-->
                 <div class="row">
-                    <form action="https://formsubmit.co/titanasura@gmail.com" method="POST" class="contact-form padd-15">
+                    <form class="contact-form padd-15">
                         <div class="row">
                             <div class="form-item col-6 padd-15">
                                 <div class="form-group">
-                                    <input type="text" name="name" required class="form-control" placeholder="Nombre">
+                                    <input type="text" id="nombre-cliente" required class="form-control" placeholder="Nombre">
                                 </div>
                             </div>
                             <div class="form-item col-6 padd-15">
                                 <div class="form-group">
-                                    <input type="email" name="email" required class="form-control" placeholder="E-mail">
+                                    <input type="email" id="correo-cliente" required class="form-control" placeholder="E-mail">
                                 </div>
                             </div>
                         </div>
                         <div class="row">
                             <div class="form-item col-12 padd-15">
                                 <div class="form-group">
-                                    <input type="text" name="subject" required class="form-control" placeholder="Asunto">
+                                    <input type="text" id="asunto-cliente" required class="form-control" placeholder="Asunto">
                                 </div>
                             </div>
                         </div>
                         <div class="row">
                             <div class="form-item col-12 padd-15">
                                 <div class="form-group">
-                                    <textarea name="coments" class="form-control" placeholder="Mensaje" required></textarea>
+                                    <textarea id="mensaje-cliente" class="form-control" placeholder="Mensaje" required></textarea>
                                 </div>
                             </div>
                         </div>
                         <div class="row">
                             <div class="form-item col-12 padd-15">
-                                <button type="submit" class="btn">Enviar mensaje</button>
+                                <button type="submit" id="btn-enviar" class="btn"  onclick="enviarMensaje()">Enviar mensaje</button>
                             </div>
                         </div>
-                        <input type="hidden" name="_next" value="http://127.0.0.1:5500/">
-                        <input type="hidden" name="_captcha" value="false">
                     </form>
                 </div>
             </div>
@@ -501,5 +499,6 @@
     <!--========== JS FILES ==========-->
     <script src="./scripts/menu.js"></script>
     <script src="./scripts/style-switcher.js"></script>
+    <script src="./scripts/contacto.js"></script>
 </body>
 </html>

@@ -1,7 +1,7 @@
-const form = document.getElementById('formularioUsuario');
-const radioemail = document.getElementById('radio-email');
-const radiotelefono = document.getElementById('radio-telefono');
-const whatsappRadio = document.getElementById('radio-whatsapp');
+const form = document.getElementById('formularioUsuario'); //formulario completo
+const radioemail = document.getElementById('radio-email'); //eleccion email
+const radiotelefono = document.getElementById('radio-telefono'); //eleccion telefono
+const whatsappRadio = document.getElementById('radio-whatsapp'); //eleccion whatsapp
 const enviarFormulario =() =>{
 const nombreApellido = document.getElementById("nombreapellido").value; 
 const franjaHoraria = document.getElementById("FranjaHoraria").value; 
